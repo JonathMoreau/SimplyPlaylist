@@ -1,7 +1,7 @@
 """
 Entités du domaine
 """
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Optional
 
 
@@ -27,9 +27,5 @@ class Playlist:
     name: str
     description: str
     spotify_id: Optional[str] = None
-    tracks: List[Track] = None
-    
-    def __post_init__(self):
-        if self.tracks is None:
-            self.tracks = []
+    tracks: List[Track] = field(default_factory=list)
 
