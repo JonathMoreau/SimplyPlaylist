@@ -128,7 +128,7 @@ class TestCreatePlaylistFromArtistsUseCase:
     @patch('builtins.input', return_value='n')
     def test_execute_cancelled(self, mock_input, use_case, mock_repos, tmp_path):
         """Test d'annulation"""
-        spotify_repo, file_repo = mock_repos
+        file_repo = mock_repos[1]
         
         test_file = tmp_path / "test_artists.txt"
         test_file.write_text("Test Artist")
