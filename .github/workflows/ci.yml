@@ -29,7 +29,10 @@ jobs:
         pip install tox
     
     - name: Run Tox
-      run: tox -e py${{ matrix.python-version | replace('.', '') }}
+      run: |
+        python_version="${{ matrix.python-version }}"
+        tox_env="py${python_version//./}"
+        tox -e ${tox_env}
     
     - name: Upload coverage reports
       uses: codecov/codecov-action@v4
