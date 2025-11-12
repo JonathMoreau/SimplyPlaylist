@@ -69,7 +69,7 @@ pytest
 pytest -v
 
 # Lancer les tests avec couverture de code
-pytest --cov=app --cov-report=html
+pytest --cov=domain --cov=infrastructure --cov=application --cov=presentation --cov-report=html
 
 # Ouvrir le rapport de couverture dans le navigateur
 # (Windows)
@@ -87,23 +87,49 @@ La couverture de code est configurée pour afficher :
 
 ```bash
 # Voir la couverture dans le terminal
-pytest --cov=app --cov-report=term-missing
+pytest --cov=domain --cov=infrastructure --cov=application --cov=presentation --cov-report=term-missing
 
 # Générer le rapport HTML
-pytest --cov=app --cov-report=html
+pytest --cov=domain --cov=infrastructure --cov=application --cov=presentation --cov-report=html
 ```
 
 ### Structure des tests
 
 Les tests sont organisés dans le dossier `tests/` :
-- `tests/test_app.py` : Tests unitaires pour toutes les classes
-- Les tests utilisent des mocks pour éviter les appels réels à l'API Spotify
+- `tests/test_domain.py` : Tests pour les entités du domaine
+- `tests/test_infrastructure.py` : Tests pour les repositories et la configuration
+- `tests/test_application.py` : Tests pour les use cases
+- `tests/test_presentation.py` : Tests pour le point d'entrée
+
+Les tests utilisent des mocks pour éviter les appels réels à l'API Spotify.
+
+### Tests avec Tox (CI/CD)
+
+Tox est configuré pour tester sur plusieurs versions de Python dans le pipeline CI/CD. Pour le développement local, utilisez directement `pytest`.
+
+```bash
+# Pour tester localement, utilisez pytest directement
+pytest
+
+# Tox est principalement utilisé dans GitHub Actions
+# Pour l'utiliser localement, vous devez avoir plusieurs versions de Python installées
+tox
+```
 
 ## 🛠️ Technologies utilisées
 
-- **Python 3**
+- **Python 3** (3.9+)
 - **Spotipy** : Bibliothèque Python pour l'API Spotify
 - **python-dotenv** : Gestion des variables d'environnement
 - **pytest** : Framework de tests
 - **pytest-cov** : Extension pour la couverture de code
+- **tox** : Automatisation des tests multi-versions (CI/CD)
 
+## 🏗️ Architecture
+
+Le projet suit une architecture **Domain Driven Design (DDD)** :
+
+- **Domain** : Entités métier (`Artist`, `Track`, `Playlist`) et interfaces de repositories
+- **Infrastructure** : Implémentations (`SpotifyRepository`, `ArtistFileRepository`, `SpotifyConfig`)
+- **Application** : Use cases (`SearchArtistTracksUseCase`, `CreatePlaylistFromArtistsUseCase`)
+- **Presentation** : Point d'entrée (`main()`)
