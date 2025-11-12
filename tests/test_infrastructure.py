@@ -57,6 +57,7 @@ class TestArtistFileRepository:
         repo = ArtistFileRepository()
         artists = repo.load_artists(str(test_file))
         
+        assert artists is not None
         assert len(artists) == 4
         assert "Iron Maiden" in artists
         assert "Metallica" in artists
@@ -72,6 +73,7 @@ class TestArtistFileRepository:
         repo = ArtistFileRepository()
         artists = repo.load_artists(str(test_file))
         
+        assert artists is not None
         assert len(artists) == 2
         assert "Artist1" in artists
         assert "Artist2" in artists
