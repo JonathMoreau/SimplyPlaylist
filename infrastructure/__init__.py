@@ -1,0 +1,4 @@
+"""
+Infrastructure Layer - Implémentations techniques
+"""
+

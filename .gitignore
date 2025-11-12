@@ -10,3 +10,14 @@ ENV/
 .venv
 
 .spotify_cache
+
+# Tests et couverture
+.coverage
+htmlcov/
+.pytest_cache/
+*.cover
+.hypothesis/
+.tox/
+coverage.xml
+*.log
+mutants/

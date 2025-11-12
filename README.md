@@ -55,9 +55,55 @@ L'application va :
 - Les credentials sont sauvegardés dans `.spotify_cache` pour les prochaines utilisations
 - Si un groupe n'est pas trouvé sur Spotify, il sera ignoré avec un message d'avertissement
 
+## 🧪 Tests
+
+Le projet inclut une suite complète de tests unitaires avec vérification de la couverture de code.
+
+### Lancer les tests
+
+```bash
+# Lancer tous les tests
+pytest
+
+# Lancer les tests avec affichage détaillé
+pytest -v
+
+# Lancer les tests avec couverture de code
+pytest --cov=app --cov-report=html
+
+# Ouvrir le rapport de couverture dans le navigateur
+# (Windows)
+start htmlcov/index.html
+# (Linux/Mac)
+open htmlcov/index.html
+```
+
+### Couverture de code
+
+La couverture de code est configurée pour afficher :
+- Le rapport dans le terminal avec les lignes manquantes
+- Un rapport HTML détaillé dans `htmlcov/`
+- Un rapport XML pour l'intégration CI/CD
+
+```bash
+# Voir la couverture dans le terminal
+pytest --cov=app --cov-report=term-missing
+
+# Générer le rapport HTML
+pytest --cov=app --cov-report=html
+```
+
+### Structure des tests
+
+Les tests sont organisés dans le dossier `tests/` :
+- `tests/test_app.py` : Tests unitaires pour toutes les classes
+- Les tests utilisent des mocks pour éviter les appels réels à l'API Spotify
+
 ## 🛠️ Technologies utilisées
 
 - **Python 3**
 - **Spotipy** : Bibliothèque Python pour l'API Spotify
 - **python-dotenv** : Gestion des variables d'environnement
+- **pytest** : Framework de tests
+- **pytest-cov** : Extension pour la couverture de code
 
