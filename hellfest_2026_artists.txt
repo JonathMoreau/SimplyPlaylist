@@ -2,6 +2,7 @@
 # Ajoutez un groupe par ligne
 # Les lignes commençant par # sont ignorées
 
+### MAINSTAGES ###
 Bring Me The Horizon
 Papa Roach
 Breaking Benjamin
@@ -35,7 +36,6 @@ The Pretty Reckless
 Alestorm
 # Mikkey Dee
 Motörhead
-Hawkwind
 #
 Sabaton 
 Opeth 
@@ -61,6 +61,7 @@ President
 Resolve 
 Revnoir 
 The Funeral Portrait
+### WAR ZONE ###
 Social Distortion
 All Time Low
 Lagwagon
@@ -92,6 +93,7 @@ Drain
 End It
 Maid of Ace
 Karen Dió
+### VALLEY ###
 Kadavar 
 Uncle Acid & The Deadbeats 
 The Inspector Cluzo 
@@ -122,66 +124,68 @@ Corrosion of Conformity
 Eyehategod 
 Soilent Green
 Gnome
-IGORRR
-THE HALO EFFECT
-RIVERS OF NIHIL
-DEVANGELIC
-SKAPHOS
-Blood Incantation
-Blood Red Throne 
-Crypta 
-Decapitated
-Esodic 
-Impureza
-My Dying Bride
-Periphery 
-Sinsaenum 
-Sylosis 
-Cabal 
-Carcass
-Defeated Sanity
-Deicide 
-DVRK 
-Obscura
-Profanation
-Septicflesh
-Severe Torture
-Bloodstain 
-Forbidden 
-Fulci 
-Napalm Death
-Possessed 
-Six Feet Under
-Sublime Cadaveric Decomposition
-Tempt Fate
-SKÁLD
-Feuerschwanz
-Borknagar
-Winterfylleth
-Perchta
-The Gathering
-My Dying Bride
-Rotting Christ
-Carach Angren
-Trelldom
-Einherjer
-Ponte Del Diavolo
-Killus
-Mourir
-Behemoth
-Old Man's Child
-Aura Noir
-Oranssi Pazuzu
-Gaerea
-1914
-Non Est Deus
-Hulder
-Vígljós
-Mayhem
-Marduk
-Wolves In The Throne Room
-Scour
-Gehenna
-Thy Light
-Austere
-Silhouette
+### ALTAR ###
+# IGORRR
+# THE HALO EFFECT
+# RIVERS OF NIHIL
+# DEVANGELIC
+# SKAPHOS
+# Blood Incantation
+# Blood Red Throne 
+# Crypta 
+# Decapitated
+# Esodic 
+# Impureza
+# My Dying Bride
+# Periphery 
+# Sinsaenum 
+# Sylosis 
+# Cabal 
+# Carcass
+# Defeated Sanity
+# Deicide 
+# DVRK 
+# Obscura
+# Profanation
+# Septicflesh
+# Severe Torture
+# Bloodstain 
+# Forbidden 
+# Fulci 
+# Napalm Death
+# Possessed 
+# Six Feet Under
+# Sublime Cadaveric Decomposition
+# Tempt Fate
+### TEMPLE ###
+# SKÁLD
+# Feuerschwanz
+# Borknagar
+# Winterfylleth
+# Perchta
+# The Gathering
+# My Dying Bride
+# Rotting Christ
+# Carach Angren
+# Trelldom
+# Einherjer
+# Ponte Del Diavolo
+# Killus
+# Mourir
+# Behemoth
+# Old Man's Child
+# Aura Noir
+# Oranssi Pazuzu
+# Gaerea
+# 1914
+# Non Est Deus
+# Hulder
+# Vígljós
+# Mayhem
+# Marduk
+# Wolves In The Throne Room
+# Scour
+# Gehenna
+# Thy Light
+# Austere
+# Silhouette
